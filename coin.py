@@ -22,8 +22,8 @@ def draw():
     screen.draw.text("Score: " + str(score), color="black", topleft=(10, 10))
 
     if game_over:
-        screen.fill("yellow")
-        screen.draw.text("Final Score: + str(score), topleft=(10, 10), fontsize=60")
+        screen.fill("pink")
+        screen.draw.text("Final Score: " + str(score), topleft=(10, 10), fontsize=60)
 
     	
 def place_coin():
@@ -50,8 +50,7 @@ def update():
 
 
 
-clock.schedule(time_up, 60.0)
+clock.schedule(time_up, 30.0)
 place_coin()
 pgzrun.go()
-#Successfully develop on Oct. 22, 2021, Tutor: Matt Szal.
 
